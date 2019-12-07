@@ -45,6 +45,7 @@ Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: de
 
 [Run]
 Filename:"{cmd}"; Parameters:"/c sc.exe create ""{#MyAppName}"" binPath= ""{app}\{#MyAppExeName}"""
+Filename:"{cmd}"; Parameters:"/c sc.exe description ""{#MyAppName}"" ""Healtchecks.io Alerts"""
 
 [UninstallRun]
 Filename:"{cmd}"; Parameters:"/c sc.exe delete ""{#MyAppName}"""
