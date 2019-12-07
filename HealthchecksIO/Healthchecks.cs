@@ -58,11 +58,7 @@ namespace HealthchecksIO
 
         public void HealthcheckCallback(object objParam)
         {
-            //System.Diagnostics.Debug.WriteLine(stri
-            
-            
-            
-            ng.Format());
+            //System.Diagnostics.Debug.WriteLine(string.Format());
             logger.Debug(string.Format("Calling {0}", "https://hc-ping.com/" + Properties.Settings.Default.API));
             using (var client = new System.Net.WebClient())
             {
